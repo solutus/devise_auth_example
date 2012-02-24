@@ -1,5 +1,9 @@
 == Description
 
 This application has authentifications engine. 
-Main features: Email confirmation, Lock account after 3 incorrect attempts, it will be unlocked in 1.minute. 
-In order to configure mailer settings, please edit file development.rb (config.action_mailer.smtp_settings).
+
+Main features: 
+ - Email confirmation
+ - Lock account after 3 incorrect attempts, it will be unlocked in 1.minute. 
+
+Please edit file development.rb (config.action_mailer.smtp_settings) to configure mailer.
