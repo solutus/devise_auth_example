@@ -37,4 +37,13 @@ Ableton::Application.configure do
   
   # for devise
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :domain               => 'your_email@yandex.ru',
+      :address              => "smtp.yandex.ru",
+      :port                 => 25,
+      :user_name            => 'your_email@yandex.ru',
+      :password             => 'your_password',
+      :authentication       => :plain }
 end
